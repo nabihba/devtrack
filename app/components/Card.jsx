@@ -7,7 +7,7 @@ const Card = ({ title, description, temperature, humidity, windSpeed, rain }) =>
       {/* Weather title (city name) */}
       <Text style={styles.title}>{title}</Text>
 
-      {/* Weather description (e.g., "clear sky") */}
+      {/* Weather description for example clear sky */}
       <Text style={styles.description}>{description}</Text>
 
       {/* Temperature */}

@@ -18,7 +18,7 @@ const useWeather = (city) => {
     }
   };
 
-  // Fetch weather data on initial load
+  // Get weather data on initial load
   useEffect(() => {
     fetchWeather();
   }, [city]);

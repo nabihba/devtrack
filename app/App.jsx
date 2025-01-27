@@ -7,11 +7,11 @@ import useWeather from './hooks/Weather';
 export default function App() {
   const [city, setCity] = useState('Jerusalem'); // State for the city input
   const [count, setCount] = useState(0); // State for the button press counter
-  const { weather, loading, refreshWeather } = useWeather(city); // Fetch weather data using the custom hook
+  const { weather, loading, refreshWeather } = useWeather(city); // get weather data using the custom hook
 
-  // Function to handle increment counter button press
+  // Function to handle increase counter button press
   const handleIncrement = () => {
-    setCount(count + 1); // Increment the counter
+    setCount(count + 1); // increase the counter
   };
 
   // Function to handle refresh weather button press
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* Title of the app */}
-      <Text style={styles.title}>Welcome to My App!</Text>
+      <Text style={styles.title}>Welcome to the best weatherapp!</Text>
 
       {/* Input for city name */}
       <TextInput
@@ -58,7 +58,7 @@ export default function App() {
   );
 }
 
-// Styles for the App component
+// Styles for the app
 const styles = StyleSheet.create({
   container: {
     flex: 1,
